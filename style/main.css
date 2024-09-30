@@ -1,0 +1,132 @@
+/* Initializing */
+:root {
+  --primary-color: #e50954;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Declaring Buttons */
+
+.btn{
+  display: inline-block ;
+  background-color: var(--primary-color);
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn-rounded{
+  border-radius: 5px;
+}
+
+.btn-xl{
+font-size: 1.5rem;
+padding: 0.7rem 1.8rem;
+}
+
+
+/* ShowCase */
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../images/back-image.png) no-repeat center center/cover;
+}
+
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 1;
+}
+
+.showcase-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.showcase-content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 2rem;
+}
+
+.showcase-content p{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+
+}
+
+
+.showcase::after{
+  content: "";
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset  8rem 8rem 60px rgba(0, 0, 0, 0.8) , inset  -8rem -8rem 60px  rgba(0, 0, 0, 0.8);
+}
+
+
+#logo{
+    position: absolute;
+    width:150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#sign-in{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+/* Tabs under the showcase */
+
+
+
+
+
